@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      " Tidy Data in Python"
-date:       2021-04-05 15:06:36 +0000
+date:       2021-04-05 11:06:37 -0400
 permalink:  tidy_data_in_python
 ---
 
