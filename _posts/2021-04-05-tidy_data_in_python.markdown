@@ -21,7 +21,7 @@ This post focuses on a small, but important, component of data cleaning: data ti
 
 
 
-## Defining tidy data
+ ## Defining tidy data
 
 Tidy data is a specific structure of data that makes analysis easier. A tidy dataset meets the following 3 conditions:
 
@@ -37,7 +37,13 @@ Any dataset that does not meet this definition is considered 'messy'.
 Messy data can appear deceptively clean and tidy, especially when being exposed to it for the first time. 
 Let's take a look at some data on the average arrival delay for different airlines flying out of different cities and see how this can be transformed into a tidy structure. 
 
+```
+import pandas as pd
+airline = pd.read_csv('../data/airline_delay.csv')
+airline.head(11)
+```
 
+<img src="https://raw.githubusercontent.com/ramandiprai/Blogging/main/data_1.png" width="375" >
 
 Although the above appears perfectly readable, it is not technically in the tidy data structure. The main issue with this dataset is that some of the column names are variable values themselves. 
 *A variable can be defined as "anythig that is not consistent or having a fixed pattern; liable to change."*
@@ -49,15 +55,36 @@ The variables can be inferred from the description of the problem and are identi
 
 In line with the definition of a tidy dataset, each variable needs to form its own column. 
 
-To tidy this dataset, it will need to be restructured so that each of the variables identified a
+To tidy this dataset, it will need to be restructured so that each of the 3 variables are displayed in their respective columns. 
+
+ - Airline names are already in a single column 
+ - Origin airports need to be transposed into a single column
+ - Average arrival delay is currently tiled across the rows
+
+The Pandas DataFrame ***melt*** method is able to reshape columns by stacking them one-by-one on top of each other and is the method used here to tidy the airline dataset. The following 2 parameters are the most relevant for restructuring:
 
 
-<img src="https://raw.githubusercontent.com/ramandiprai/Blogging/main/data_1.png" width="350" >
+*id_vars* : a list of column names to keep as columns
+
+
+*value_vars* : a list of column names to reshape into one column  (by default, all columns not in id_vars will be melted)
+
+
+```
+airline_melted = airline.melt(id_vars= 'airline', var_name= 'origin_airport', value_name = 'avg_arrival_delay')
+
+airline_melted.head(11)
+```
+
+
+<img src="https://raw.githubusercontent.com/ramandiprai/Blogging/main/tidy_data.png" width="300" >
+
+The restructuring has ensured that each variable forms its own column and consequently each observation is now in its own row. 
+
+In just those few steps, we now have a tidy dataset! 
 
 
 
-
-![messy_data](https://raw.githubusercontent.com/ramandiprai/Blogging/main/data_1.png)
 
 
 
