@@ -1,11 +1,11 @@
 # Site settings
 author: Ramandip Rai
-title: Tidy Data in Python
+title: My Data Science journey with Flatiron School
 header-img: img/home-bg.png
 email: ramandiprai_@hotmail.co.uk
 copyright_name: Ramandip Rai
 description: > # this means to ignore newlines until "baseurl:"
-  Tidy data requirements & a brief example
+  Sharing my learning experiences
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  ramandiprai
