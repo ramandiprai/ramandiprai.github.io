@@ -57,5 +57,8 @@ To tidy this dataset, it will need to be restructured so that each of the variab
 
 
 
+![messy_data](https://raw.githubusercontent.com/ramandiprai/Blogging/main/data_1.png)
+
+
 
 
