@@ -52,7 +52,8 @@ In line with the definition of a tidy dataset, each variable needs to form its o
 To tidy this dataset, it will need to be restructured so that each of the variables identified a
 
 
-<img src="https://raw.githubusercontent.com/ramandiprai/Blogging/main/data_1.png" width="300" >
+<img src="https://raw.githubusercontent.com/ramandiprai/Blogging/main/data_1.png" width="350" >
+
 
 
 
