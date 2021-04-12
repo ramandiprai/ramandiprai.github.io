@@ -7,7 +7,7 @@ permalink:  tidy_data_in_python
 
 
 
-Since starting out my data science journey with FlatIron School, I have come to know a few infamous sayings relating to the working life of a data scientist. The most recurring goes something like this:
+Since starting out my data science journey with Flatiron School, I have come to know a few infamous sayings relating to the working life of a data scientist. The most recurring goes something like this:
 
 > "data scientists spend 80% of their time cleaning data and the other 20% complaining about cleaning the data."
 
