@@ -7,7 +7,7 @@ permalink:  tidy_data_in_python
 
 
 
-Since starting out my data science journey with FlatIron School, I have come to know many infamous sayings relating to the working life of a data scientist. The most recurring goes something like this:
+Since starting out my data science journey with FlatIron School, I have come to know a few infamous sayings relating to the working life of a data scientist. The most recurring goes something like this:
 
 > "data scientists spend 80% of their time cleaning data and the other 20% complaining about cleaning the data."
 
@@ -17,11 +17,11 @@ Producing results is typically not the first step of a data analysis. The vast m
 
 This post focuses on a small, but important, component of data cleaning: data tidying. Tidy data is a term coined by Hadley Wickham, the creator of many popular R packages, to describe a specific structure of data that makes for easy analysis. 
 
-*The complete Tidy Data paper can be found [here](https://vita.had.co.nz/papers/tidy-data.pdf) for a complete understanding.*
+*The full Tidy Data paper can be found [here](https://vita.had.co.nz/papers/tidy-data.pdf) for a complete understanding.*
 
 
 
-#### Defining tidy data
+## Defining tidy data
 
 Tidy data is a specific structure of data that makes analysis easier. A tidy dataset meets the following 3 conditions:
 
@@ -32,17 +32,27 @@ Tidy data is a specific structure of data that makes analysis easier. A tidy dat
 Any dataset that does not meet this definition is considered 'messy'. 
 
 
-#### Tidying a messy dataset
+## Tidying a messy dataset
 
 Messy data can appear deceptively clean and tidy, especially when being exposed to it for the first time. 
-```
-import pandas as pd
-arrival_delay = pd.read_csv('../data/tidy/aver
-```
-
-![Imgur](https://imgur.com/mhX8ue9)
+Let's take a look at some data on the average arrival delay for different airlines flying out of different cities and see how this can be transformed into a tidy structure. 
 
 
+
+Although the above appears perfectly readable, it is not technically in the tidy data structure. The main issue with this dataset is that some of the column names are variable values themselves. 
+*A variable can be defined as "anythig that is not consistent or having a fixed pattern; liable to change."*
+
+The variables can be inferred from the description of the problem and are identified as:
+1. airline
+2. origin airport
+3. average arrival delay 
+
+In line with the definition of a tidy dataset, each variable needs to form its own column. 
+
+To tidy this dataset, it will need to be restructured so that each of the variables identified a
+
+
+<img src="https://raw.githubusercontent.com/ramandiprai/Blogging/main/data_1.png" width="300" >
 
 
 
