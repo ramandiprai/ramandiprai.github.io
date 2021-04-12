@@ -5,7 +5,7 @@ header-img: img/home-bg.png
 email: ramandiprai_@hotmail.co.uk
 copyright_name: Ramandip Rai
 description: > # this means to ignore newlines until "baseurl:"
-  Sharing my learning experiences
+  Sharing my learning experiences as a beginner learning to code. 
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  ramandiprai
