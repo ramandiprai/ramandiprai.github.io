@@ -20,8 +20,7 @@ This post focuses on a small, but important, component of data cleaning: data ti
 *The full Tidy Data paper can be found [here](https://vita.had.co.nz/papers/tidy-data.pdf) for a complete understanding.*
 
 
-
- ## Defining tidy data
+## Defining tidy data
 
 Tidy data is a specific structure of data that makes analysis easier. A tidy dataset meets the following 3 conditions:
 
