@@ -53,9 +53,7 @@ The variables can be inferred from the description of the problem and are identi
 2. origin airport
 3. average arrival delay 
 
-In line with the definition of a tidy dataset, each variable needs to form its own column. 
-
-To tidy this dataset, it will need to be restructured so that each of the 3 variables are displayed in their respective columns. 
+In line with the definition of a tidy dataset, each variable needs to form its own column.  To tidy this dataset, it will need to be restructured so that each of the 3 variables are displayed in their respective columns. 
 
  - Airline names are already in a single column 
  - Origin airports need to be transposed into a single column
